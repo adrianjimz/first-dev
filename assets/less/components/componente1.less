@@ -1,0 +1,168 @@
+#componente1{
+  background-color: @Site-color-0;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transition: width 300ms, height 300ms;
+  .acceso {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    a {
+      border: none;
+      width: 40px;
+      height: 40px;
+      i {
+        margin-top: 4px;
+        color: @Color-main;
+        font-size: 18px;
+        &:before {
+          font-family: FontAwesome;
+          content: '\f2d2';
+        }
+      }
+    }
+  }
+
+  .datos{
+    display: none;
+    border-bottom: 1px solid #EA3B98;
+    padding-bottom: 30px;
+    position: relative;
+    .titulo {
+      padding-left: 10px;
+      .texto {
+        font-size: 15px;
+      }
+      .cantidad{
+        color: #EA3B98;
+        font-size: 20px;
+      }
+    }
+
+    .nota{
+      position: absolute;
+      right: 10px;
+      font-size: 10px;
+      text-align: right;
+      width: 65px;
+      bottom: 0;
+    }
+
+  }
+
+  .datos2 {
+    padding-top: 0;
+    display: none;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    .item {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: @Font-color-B;
+      border-bottom: 1px solid #DDDDDD;
+      .subname{
+        font-size: 10px;
+        .name {
+          padding-left: 10px;
+          font-size: 35px;
+        }
+      }
+      .referencia{
+        position: relative;
+        margin-bottom: 10px;
+
+        .cantidad {
+          color: @Site-color;
+          font-size: 150%;
+          font-weight: 600;
+          .small {
+            font-weight: 300;
+          }
+        }
+        .switch {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 60px;
+          .barra {
+            background-color: @Site-color-0;
+            border: solid 1px @Site-color-20;
+            height: 27px;
+            border-radius: 27px;
+          }
+          .boton {
+            background-color: @Site-color-20;
+            height: 23px;
+            width: 23px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            border-radius: 50%;
+            margin-left: 0;
+            transition: margin-left 300ms;
+          }
+        }
+      }
+      .progreso {
+        position: relative;
+        margin-bottom: 15px;
+        .barraprogreso {
+          background-color: @Site-color-20;
+          height: 8px;
+          border-radius: 10px;
+        }
+        .porcentaje {
+          background-color: @Color-main;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 10px;
+        }
+      }
+      &.active {
+        .switch {
+          .barra {
+            border-color: @Color-main;
+          }
+          .boton {
+            background-color: @Color-main;
+            margin-left: 33px;
+            transition: margin-left 300ms;
+          }
+        }
+      }
+      &:last-of-type {
+        border: none;
+        padding-bottom: 4px;
+      }
+    }
+  }
+  &.open {
+    width: 300px;
+    height: 700px;
+    .acceso{
+      z-index: 10;
+      a {
+        i {
+          &:before {
+            content: "\f2d1";
+          }
+        }
+      }
+    }
+    .datos{
+      display: block;
+    }
+    .datos2 {
+      display: block;
+      overflow: scroll;
+      height: ~"calc(100% - 124px)";
+    }
+  }
+}
