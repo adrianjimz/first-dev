@@ -10,7 +10,75 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<h2>Reconstrucción CDMX</h2>
+<div class="headermenu">
+    <nav class="navegacion">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="/assets/img/Logo-cdmx.png"></img>
+                </div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"> Acerca de
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"> Descargas
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"> Torneos
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"> Reglas
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"> Directorio
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
 <div id="componente1" class="open">
     <div class="acceso">
         <a id="mostrar-componente1" href="#" class="btn btn-default">
@@ -204,6 +272,7 @@
     </div>
 </div>
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/assets/js/app.js" type="text/javascript"></script>
 </body>
 </html>

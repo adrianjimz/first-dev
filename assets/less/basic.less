@@ -1,10 +1,67 @@
 body {
     background-color: @Site-color-20;
-    padding-left: 10px;
-    font-family: 'Open Sans', sans-serif;}
+    font-family: 'Open Sans', sans-serif;
+    .headermenu {
+        .navegacion {
+            background-color: #4CAF50;
+            margin-bottom: 20px;
+            margin-left: 0;
+            position: relative;
+            .container {
+                .nav {
+                    .logo {
+                        padding: 10px 50px 10px 0;
+                        float: left;
+                        img {
+                            display: block;
+                            width: 100px;
+                        }
+                    }
+                    ul  {
+                        display: table;
+                        float: left;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        .dropdown {
+                            float: left;
+                            a {
+                                display: block;
+                                padding: 18px;
+                                font-size: 16px;
+                                color: white;
+                            }
+                            .dropdown-menu {
+                                background-color: #2d6930;
+                                display: none;
+                            }
+                            a:hover{
+                                background-color: #2d6930;
+                                text-decoration: none;
+                                color: white;
+                                font-size: 16px;
+                                cursor: pointer;
+                                i {
+                                    transform:rotate(180deg);
+                                }
+
+                            }
+                            &:hover {
+                                .dropdown-menu {
+                                    display: block;
+                                    background-color: #4CAF50;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
-h2 {
+h3 {
     color: #EA3B98;
     padding-left: 20px;
     padding-bottom: 20px;
